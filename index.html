@@ -23,31 +23,29 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px 20px;
+    text-align: center;
 }
 
 /* CAIXA DO TÍTULO */
 .highlight {
     background: #e1ebf7;
-    padding: 18px 28px;
+    padding: 16px 24px;
     border-radius: 12px;
-    display: inline-block;          /* acompanha largura do texto */
-    margin: 0 auto 10px auto;       /* centraliza */
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 /* TÍTULO */
 .highlight h1 {
     margin: 0;
-    font-size: 28px;                /* ~30% menor */
+    font-size: 26px;   /* 30% menor */
     color: #2b5fa8;
-    text-align: center;
-    white-space: nowrap;
 }
 
 /* AVISO */
 .notice {
     font-size: 12px;
     color: #666;
-    text-align: center;
     margin: 10px 0 30px 0;
 }
 
@@ -56,7 +54,7 @@ body {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     gap: 40px;
-    align-items: start;
+    text-align: left; /* volta alinhamento do conteúdo */
 }
 
 /* TEXTO */
@@ -72,14 +70,14 @@ ul {
     padding-left: 20px;
 }
 
-/* COLUNA DIREITA CENTRALIZADA */
+/* COLUNA DIREITA */
 .right {
     text-align: center;
 }
 
 /* IMAGEM DO PRODUTO */
 .right img {
-    width: 160px;                   /* controle definitivo */
+    width: 160px;
     height: auto;
     display: block;
     margin: 0 auto 20px auto;
@@ -108,11 +106,6 @@ ul {
     .grid {
         grid-template-columns: 1fr;
     }
-
-    .highlight h1 {
-        white-space: normal;
-        font-size: 24px;
-    }
 }
 </style>
 </head>
@@ -127,13 +120,9 @@ ul {
 <div class="container">
 
     <!-- TÍTULO -->
-    <center>
-    <div style="background:#e1ebf7;padding:16px 24px;border-radius:12px;display:inline-block;">
-        <h1 style="margin:0;font-size:26px;color:#2b5fa8;">
-            Whey Protein Concentrado Dux 900g
-        </h1>
+    <div class="highlight">
+        <h1>Whey Protein Concentrado Dux 900g</h1>
     </div>
-</center>
 
     <!-- AVISO -->
     <div class="notice">
@@ -145,12 +134,34 @@ ul {
 
         <!-- ESQUERDA -->
         <div>
-            <p>
-                Suplemento proteico utilizado para complementar a ingestão diária de proteínas.
-            </p>
+            <p>Suplemento proteico utilizado para complementar a ingestão diária de proteínas.</p>
 
             <ul>
                 <li>Proteína de alto valor biológico</li>
                 <li>Boa dissolução</li>
                 <li>Sabor chocolate</li>
-                <li>Em
+                <li>Embalagem 900g</li>
+            </ul>
+        </div>
+
+        <!-- DIREITA -->
+        <div class="right">
+            <img src="produto.png" alt="Produto">
+
+            <div class="cta">
+                <a href="https://amzn.to/3LNsjTi" target="_blank">
+                    Ver preço na Amazon
+                </a>
+            </div>
+
+            <div class="aviso">
+                ASSOCIADO AMAZON - COMPRAS QUALIFICADAS
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
