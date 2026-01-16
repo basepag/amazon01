@@ -10,7 +10,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -32,12 +34,12 @@ body {
     padding: 50px 20px;
 }
 
-/* CAIXA DO PRODUTO */
+/* CAIXA DE DESTAQUE DO PRODUTO */
 .product-highlight {
-    background: #f2f6fb;
-    padding: 25px 30px;
+    background: #e1ebf7;
+    padding: 28px 32px;
     border-radius: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .product-highlight h1 {
@@ -48,18 +50,19 @@ body {
     line-height: 1.1;
 }
 
-/* AVISO */
+/* ALERTA DISCRETO */
 .notice {
     font-size: 12px;
     color: #666;
     margin: 8px 5px 35px 5px;
 }
 
-/* GRID */
+/* GRID PRINCIPAL */
 .main-grid {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     gap: 50px;
+    align-items: start;
 }
 
 /* TEXTO */
@@ -91,7 +94,7 @@ ul {
     margin-bottom: 20px;
 }
 
-/* BOTÃO */
+/* BOTÃO AMAZON */
 .cta a {
     display: inline-block;
     background: #ff9900;
@@ -103,6 +106,7 @@ ul {
     border-radius: 12px;
 }
 
+/* AVISO AFILIADO */
 .aviso {
     font-size: 12px;
     color: #666;
@@ -111,80 +115,4 @@ ul {
 
 /* MOBILE */
 @media (max-width: 900px) {
-    .product-highlight h1 {
-        font-size: 36px;
-    }
-
-    .main-grid {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<!-- CABECEIRA -->
-<div class="hero">
-    <img src="landpage.png" alt="Whey Protein Concentrado Dux">
-</div>
-
-<div class="container">
-
-    <!-- DESTAQUE -->
-    <div class="product-highlight">
-        <h1>Whey Protein Concentrado Dux 900g</h1>
-    </div>
-
-    <!-- AVISO -->
-    <div class="notice">
-        Esta página tem caráter informativo e apresenta um resumo do produto para fins de referência ao consumidor.
-    </div>
-
-    <!-- CONTEÚDO -->
-    <div class="main-grid">
-
-        <!-- TEXTO -->
-        <div>
-            <p>
-                O <strong>Whey Protein Concentrado Dux</strong> é um suplemento alimentar utilizado
-                por pessoas que buscam complementar a ingestão diária de proteínas.
-            </p>
-
-            <p>
-                Com sabor chocolate e boa dissolução, é indicado para quem pratica atividades
-                físicas ou deseja apoiar uma rotina alimentar equilibrada.
-            </p>
-
-            <h2>Principais características</h2>
-            <ul>
-                <li>Fonte de proteína de alto valor biológico</li>
-                <li>Auxilia na ingestão diária de proteínas</li>
-                <li>Sabor chocolate e boa solubilidade</li>
-                <li>Indicado para diferentes rotinas de treino</li>
-                <li>Embalagem de 900g</li>
-            </ul>
-        </div>
-
-        <!-- PRODUTO + CTA -->
-        <div class="product-box">
-            <img src="https://m.media-amazon.com/images/I/61V8HjZKjFL._AC_SL1000_.jpg"
-                 alt="Whey Protein Concentrado Dux 900g">
-
-            <div class="cta">
-                <a href="https://amzn.to/3LNsjTi" target="_blank">
-                    Ver preço na Amazon
-                </a>
-            </div>
-
-            <div class="aviso">
-                Como Associado da Amazon, eu ganho com compras qualificadas.
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-</body>
-</html>
+    .produc
